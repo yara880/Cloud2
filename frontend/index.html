@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration Form in HTML CSS</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <section class="container">
+      <header>Registration Form</header>
+      <div class="select" >
+        <select name="format" id="method" onchange="getmethod()" >
+           <option selected disabled>Choose an option</option>
+           <option id="Choose an option">Choose an option</option>
+           <option id="GET">Get_all</option>
+           <option id="GETBYID">Get_by_ID</option>
+           <option id="POST">Post_new</option>
+           <option id="UPDATE">Update_By_ID</option>
+           <option id="DELETE">Delete_by_ID</option>
+        </select>
+     </div>
+     <div id="data">
+      <form action="#" class="form">
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter full name" id="name" />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="text" placeholder="Enter email address" id="email"/>
+        </div>
+
+        
+        <div class="gender-box" id="gender">
+          <h3>Gender</h3>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender"/>
+              <label for="check-male">male</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Female</label>
+            </div>
+          
+          </div>
+        </div>
+        <div class="input-box address">
+          <label>Age</label>
+          <input type="text" placeholder="Enter Age" id="age"/>
+        
+          <label>ID</label>
+          <input type="text" placeholder="Enter ID" id="id1"/>
+         
+         
+        </div>
+      </div>
+        <button id="Submit" onclick="submits()">Submit </button>
+      </form>
+    </section>
+    <section class="container" style="margin-left: 30px; height: 600px;" id="output">
+      
+       
+    </section>
+  </body>
+</html>
